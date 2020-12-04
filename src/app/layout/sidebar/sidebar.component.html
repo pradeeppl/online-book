@@ -1,0 +1,44 @@
+
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center"  [routerLink]="['']">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fa fa-book"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Online Book</div>
+    </a>
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/dashboard']">
+            <i class="fa fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Pages
+    </div>
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" [routerLink]="" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fa fa-fw fa-file-text-o"></i>
+            <span>Tests</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" [routerLink]="">Listening</a>
+                <a class="collapse-item" [routerLink]="">Reading</a>
+                <a class="collapse-item" [routerLink]="">Speaking</a>
+                <a class="collapse-item"  [routerLink]="['/writing']">Writing</a>
+            </div>
+        </div>
+    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+</ul>
+<!-- End of Sidebar -->
