@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WritingComponent } from './writing/writing.component';
+import { EssayComponent } from './essay/essay.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { WritingComponent } from './writing/writing.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    WritingComponent
+    WritingComponent,
+    EssayComponent
   ],
   imports: [
     BrowserModule,
