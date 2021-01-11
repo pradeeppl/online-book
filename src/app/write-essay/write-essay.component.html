@@ -1,0 +1,72 @@
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 text-gray-800">Write Essay</h1>
+    <ul class="customBreadcrumb">
+        <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+        <li><a [routerLink]="['/writing']">Writing</a></li>
+        <li><a [routerLink]="['/writing/essay']">Essay</a></li>
+        <li>Write Essay</li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-12">
+        <form>
+            <div class="writeForm">
+                <div class="formHeader">
+                    <div class="headerTitle d-flex justify-content-between">
+                        <h3>Write Essay #076008 <span>Real Question</span></h3>
+                        <div class="timeCounter">{{seconds | formatTime}}</div>
+                    </div>
+                    <div class="subTitle d-flex justify-content-between align-items-center">
+                        <h3>Architectural Design</h3>
+                        <div class="titleBtns">
+                            <a class="btn btn-sm btn-primary m-1">
+                                <i class="fa fa-question-circle"></i> Question Intro
+                            </a>
+                            <a class="btn btn-sm btn-primary m-1">
+                                <i class="fa fa-plus"></i> Add to Favourite List
+                            </a>
+                            <a class="btn btn-sm btn-primary m-1">
+                                <i class="fa fa-flag"></i> Exam Count <span>35</span>
+                            </a>
+                            <a class="btn btn-sm btn-primary m-1">
+                                <i class="fa fa-tag"></i> Add Label
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="titleDes">
+                        <h6>How does the design of building affect, either positively or negatively, where people work and live?</h6>
+                    </div>
+                </div>
+                <div class="formBody">
+                    <textarea #answer [attr.disabled]="words > 300 ? '' : null" [readonly]="seconds != 0 ? false : true" (keydown)="wordCounter()" class="form-control" rows="8" oncopy="return false;" onpaste="return false;" oncut="return false;"></textarea>
+                    <div class="border p-2 totalCount">
+                        <div class="text-dark" #wordCount>Total Word Count : {{words}}</div>
+                    </div>
+                </div>
+                <div class="formFooter">
+                    <div class="footerBtns d-flex justify-content-between py-2">
+                        <div class="leftBtns">
+                            <a class="btn btn-sm btn-primary m-1">Re-Start</a>
+                            <a class="btn btn-sm btn-primary m-1">Answer</a>
+                            <a class="btn btn-sm btn-primary m-1">Feedback</a>
+                        </div>
+                        <div class="rightBtns">
+                            <a class="btn btn-sm btn-primary m-1"><i class="fa fa-forward"></i></a>
+                            <a class="btn btn-sm btn-primary m-1">Previous</a>
+                            <span>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select> / 121
+                            </span>
+                            <a class="btn btn-sm btn-primary m-1">Next</a>
+                            <button class="btn btn-sm btn-primary m-1">Save & Score</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

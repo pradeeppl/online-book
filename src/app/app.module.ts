@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WritingComponent } from './writing/writing.component';
 import { EssayComponent } from './essay/essay.component';
+import { FormatTimePipe, WriteEssayComponent } from './write-essay/write-essay.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { EssayComponent } from './essay/essay.component';
     RegisterComponent,
     DashboardComponent,
     WritingComponent,
-    EssayComponent
+    EssayComponent,
+    WriteEssayComponent,
+    FormatTimePipe
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { EssayComponent } from './essay/essay.component';
 import { ContentComponent } from './layout/content/content.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { WriteEssayComponent } from './write-essay/write-essay.component';
 import { WritingComponent } from './writing/writing.component';
 
 const routes: Routes = [
@@ -38,6 +39,14 @@ const routes: Routes = [
     children: [{
       path: '',
       component: EssayComponent
+    }]
+  },
+  {
+    path:'writing/essay/write-essay',
+    component: ContentComponent,
+    children: [{
+      path: '',
+      component: WriteEssayComponent
     }]
   }
 ];

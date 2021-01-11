@@ -11352,6 +11352,9 @@ a:hover {
   border-radius: 50%;
 }
 .eassyList h3 a {
+  color: #149f83;
+}
+.eassyList h3 .smallBtn {
   margin-left: 5px;
   color: #fff!important;
   background-color: #428bca;
@@ -11367,4 +11370,65 @@ a:hover {
 }
 .eassyDes p:last-child {
   margin-bottom: 0;
+}
+.writeForm {
+
+}
+.formHeader .headerTitle {
+  background-color: #791e3f;
+  padding:10px;
+}
+.formHeader .headerTitle h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 30px;
+}
+.formHeader .headerTitle .timeCounter {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 30px;
+}
+.subTitle {
+  padding:10px 0;
+}
+.subTitle h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e73df;
+  margin:0;
+}
+.titleDes h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4e73df;
+}
+.writeForm hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.totalCount {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #000;
+}
+.formBody textarea,
+.formBody textarea:focus {
+  background-color: #e1e5e7;
+}
+.titleBtns span {
+  padding: 3px;
+  color: #fff;
+  background-color: #e25d6d;
+  border-radius: 50%;
+}
+.rightBtns span {
+  display: inline-block;
+}
+.rightBtns span .form-control {
+  width: 70px;
+  display: inline-block;
 }
